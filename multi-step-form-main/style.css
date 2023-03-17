@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 950px;
+  margin: auto;
+  font-family: "Ubuntu";
+}
+.main {
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  justify-content: center;
+  width: 950px;
+}
+.main .radio input {
+  position: absolute;
+  top: -100%;
+}
+input[type="radio"] {
+  opacity: 0;
+}
+.next-step {
+  display: flex;
+  justify-content: flex-end;
+}
+.next-step p {
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.sidebar {
+  background-image: url(./assets/images/bg-sidebar-desktop.svg);
+  background-position-x: 15px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 600px;
+  width: 32%;
+  padding: 40px;
+}
+.number {
+  display: flex;
+}
+
+.number h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.number h5:hover {
+  background-color: white;
+  color: black;
+}
+.step {
+  margin-left: 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.step h4 {
+  color: gray;
+}
+.page1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 63%;
+  padding: 35px;
+}
+.page1 .info h2 {
+  color: rgb(43, 43, 153);
+  font-size: 42px;
+}
+.page1 .info p {
+  margin-top: 20px;
+  color: #979797;
+}
+.page1 input {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.type-text{
+  margin-top: 60px;
+}
+.type-text input {
+  width: 100%;
+}
+.next-step {
+  margin-top: auto;
+}
+.page2 .next {
+  color: white;
+  border-radius: 10px;
+}
+.page2 {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 35px;
+}
+.page2 h2 {
+  color: rgb(43, 43, 153);
+  font-size: 42px;
+}
+.page2 p {
+  margin-top: 20px;
+  color: #979797;
+}
+.page2 .back-next p {
+  color: white;
+}
+.images {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 300px;
+}
+.change {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.change h4 {
+  margin: 0 30px;
+}
+.change label {
+  width: 65px;
+  height: 20px;
+  background-color: blue;
+  display: flex;
+  border-radius: 1rem;
+}
+span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+}
+.change input[type="checkbox"] {
+  display: none;
+}
+input:checked + label > span {
+  transform: translateX(215%);
+}
+.back-next{
+  margin-top: auto;
+}
+.page2 .back-next {
+  display: flex;
+  justify-content: space-between;
+}
+.page2 .back-next p {
+  background-color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+.page3 {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 35px;
+}
+.page3 .info h2 {
+  color: rgb(43, 43, 153);
+  font-size: 42px;
+}
+.page3 .info p {
+  margin-top: 20px;
+  color: #979797;
+}
+.page3 .checkbox {
+  margin-top: 60px;
+}
+.checkbox-start{
+  display: flex;
+  justify-content: flex-start;
+}
+.page3 .checkbox-pro{
+  margin-top: 60px;
+}
+.page3 .checkbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 10px;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+.checkbox:hover {
+  cursor: pointer;
+}
+.checkbox h4 {
+  margin-left: 10px;
+  color: blue;
+}
+.checkbox p {
+  margin-left: 10px;
+  color: gray;
+}
+.checkbox h3 {
+  color: rgb(98, 0, 255);
+}
+.page3 .back-next {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.back-next p {
+  background-color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+.page4 {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 35px;
+}
+.page4 .info h2 {
+  color: rgb(43, 43, 153);
+  font-size: 42px;
+}
+.page4 .info p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #979797;
+}
+.page4 .back-next {
+  display: flex;
+  justify-content: space-between;
+}
+.page4 .back-next p {
+  background-color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+.page5 {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+.page5 img {
+  display: flex;
+  justify-content: center;
+}
+.page5 h2 {
+  color: rgb(43, 43, 153);
+  font-size: 42px;
+}
+.page5 p {
+  margin-top: 20px;
+  text-align: center;
+  color: #979797;
+}
+
+.main > :not(.sidebar, input) {
+  display: none;
+}
+.main:has([value="first"]:checked) .page1,
+.main:has([value="second"]:checked) .page2,
+.main:has([value="third"]:checked) .page3,
+.main:has([value="fourth"]:checked) .page4,
+.main:has([value="fifth"]:checked) .page5 {
+  display: flex;
+}
